@@ -1,0 +1,17 @@
+<%- include('./includes/head.ejs') %>
+</head>
+    <body>
+        <main>
+            <h4>Hello: </h4>
+            <% if (name.length > 0) { %>
+                <ul>
+                    <% for (let n of name) { %>
+                        <li><%= n.name %></li>
+                    <% } %>
+                </ul>
+            <% } else { %>
+                <h4>No Names found</h4>
+            <% } %>
+        </main>
+    </body>
+</html>
